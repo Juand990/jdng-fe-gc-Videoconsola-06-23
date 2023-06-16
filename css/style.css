@@ -1,0 +1,388 @@
+.container {
+  width: 400px;
+  height: 600px;
+  background-color: rgb(125, 179, 9);
+  margin: 50px;
+  border-radius: 20px 20px 180px 180px / 20px 20px 60px 60px;
+  box-shadow: 10px 15px 15px rgb(122, 112, 112);
+}
+.superior {
+  width: 100%;
+  height: 45%;
+  display: grid;
+  grid-template-rows: 0.5fr 6fr;
+  grid-template-columns: 0.5fr 8fr 0.5fr;
+}
+.backscreen {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  background-color: rgb(75, 78, 73);
+  border-radius: 20px 20px 60px 60px / 20px 20px 20px 20px;
+  display: grid;
+  grid-template-rows: 1fr 6fr 2fr;
+  grid-template-columns: 2fr 6fr 2fr;
+}
+.power {
+  grid-row: 2/3;
+  display: grid;
+  grid-template-rows: 3fr 1fr 1fr 5fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.red-light {
+  background: linear-gradient(135deg, rgb(255, 0, 0) 40%, rgb(255, 255, 255));
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  align-self: center;
+  justify-self: center;
+}
+.light1 {
+  grid-row: 2/3;
+  grid-column: 3/4;
+  position: relative;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: lightgrey;
+  align-self: center;
+  justify-self: center;
+}
+.light11 {
+  position: absolute;
+  border-radius: 50%;
+  width: 4px;
+  height: 8px;
+  background-color: rgb(75, 78, 73);
+}
+.light2 {
+  grid-row: 2/3;
+  grid-column: 4/5;
+  position: relative;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: lightgrey;
+  align-self: center;
+  justify-self: center;
+}
+.light22 {
+  position: absolute;
+  border-radius: 50%;
+  width: 4px;
+  height: 8px;
+  background-color: rgb(75, 78, 73);
+}
+.light3 {
+  grid-row: 2/3;
+  grid-column: 5/6;
+  position: relative;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: lightgrey;
+  align-self: center;
+  justify-self: center;
+}
+.light33 {
+  position: absolute;
+  border-radius: 50%;
+  width: 4px;
+  height: 8px;
+  background-color: rgb(75, 78, 73);
+}
+.spanpower {
+  color: lightgrey;
+  font-size: 13px;
+  grid-row: 3;
+  grid-column: 2/6;
+}
+.gbcolor {
+  background-image: url(../img/gameboycolorlogo.png);
+  grid-row: 3/3;
+  grid-column: 2/3;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.screen {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  background-image: url(../img/screen-juego.png);
+  background-repeat: round;
+  background-size: cover;
+  background-position: top;
+}
+.inferior {
+  width: 100%;
+  height: 50%;
+  display: grid;
+  grid-template-rows: 1.5fr 2.5fr 2.5fr 0.7fr 1fr;
+  grid-template-columns: 0.5fr 1.5fr 2fr 2fr 0.12fr;
+}
+.relieve {
+  grid-row: 1/5;
+  grid-column: 2/5;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 0.15fr 1fr 0.2fr;
+}
+.relievecolor {
+  grid-column: 2/3;
+  border-radius: 50px 50px 25% 25%/ 10px 10px 8% 8%;
+  background-color: rgb(120, 165, 15);
+  box-shadow: 0px 50px 75px 5px rgb(123, 170, 21);
+}
+.ninlogo {
+  grid-row: 1/2;
+  grid-column: 3/4;
+  background-image: url(../img/nintendologo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  opacity: .8;
+}
+.cruceta {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.arriba {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  border: 1px solid black;
+  background-color: rgb(50, 50, 50);
+  border-radius: 25% 25% 0 0;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.arriba button {
+  width: 30px;
+  height: 30px;
+  border-radius: 25% 25% 0 0;
+  font-size: 40px;
+  color: rgb(80, 80, 80);
+  background-color: rgb(50, 50, 50);
+}
+.fl-arriba {
+  width: 0;
+  height: 0;
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+  border-bottom: 12px solid rgb(80, 80, 80);
+  margin-left: -5px;
+}
+.izq {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  border: 1px solid black;
+  background-color: rgb(50, 50, 50);
+  border-radius: 25% 0 0 25%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.izq button {
+  width: 30px;
+  height: 30px;
+  border-radius: 25% 0 0 25%;
+  font-size: 40px;
+  color: rgb(80, 80, 80);
+  background-color: rgb(50, 50, 50);
+}
+.fl-izq {
+  width: 0;
+  height: 0;
+  border-right: 12px solid rgb(80, 80, 80);
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+}
+.centro {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  background-color: rgb(50, 50, 50);
+  display: grid;
+}
+.circulo {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  background-color: rgb(80, 80, 80);
+  border-radius: 50%;
+  align-self: center;
+  justify-self: center;
+}
+.drch {
+  grid-row: 2/3;
+  grid-column: 3/4;
+  border: 1px solid black;
+  background-color: rgb(50, 50, 50);
+  border-radius: 0 25% 25% 0;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.drch button {
+  width: 30px;
+  height: 30px;
+  border-radius: 0 25% 25% 0;
+  font-size: 40px;
+  color: rgb(80, 80, 80);
+  background-color: rgb(50, 50, 50);
+}
+.fl-drch {
+  width: 0;
+  height: 0;
+  border-left: 12px solid rgb(80, 80, 80);
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+}
+.abajo {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  background-color: rgb(50, 50, 50);
+  border-radius: 0 0 25% 25%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.abajo button {
+  width: 30px;
+  height: 30px;
+  border-radius: 0 0 25% 25%;
+  font-size: 40px;
+  color: rgb(80, 80, 80);
+  background-color: rgb(50, 50, 50);
+}
+.fl-abajo {
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-top: 12px solid rgb(80, 80, 80);
+  border-right: 12px solid transparent;
+  margin-left: -5px;
+}
+.ab {
+  grid-row: 2/3;
+  grid-column: 3/5;
+  display: grid;
+  grid-template-rows: 0.5fr 4fr 0.5fr;
+  grid-template-columns: 2fr 1.5fr 1.5fr;
+}
+.posB {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  display: grid;
+  grid-template-rows: 0.5fr 1fr;
+  grid-template-columns: 2fr;
+  justify-items: center;
+  align-items: center;
+}
+.buttonB {
+  grid-row: 2/3;
+}
+.buttonB button {
+  grid-row: 2/3;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 40px;
+  color: rgb(80, 80, 80);
+  background-color: rgb(50, 50, 50);
+}
+.posA {
+  grid-row: 2/3;
+  grid-column: 3/4;
+  display: grid;
+  grid-template-rows: 1fr 0.5fr;
+  grid-template-columns: 2fr;
+  justify-items: center;
+  align-items: center;
+}
+.buttonA {
+  grid-row: 1/2;
+}
+.buttonA button {
+  grid-row: 2/3;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 40px;
+  color: rgb(80, 80, 80);
+  background-color: rgb(50, 50, 50);
+}
+.selectstart {
+  grid-row: 3/4;
+  grid-column: 3/4;
+  display: grid;
+  grid-template-rows: 2fr 2fr 2fr 1.5fr;
+  grid-template-columns: 0.5fr 2fr 2fr 2fr 2fr 0.5fr;
+}
+.select {
+  grid-row: 4/5;
+  grid-column: 2/4;
+  border-radius: 50px;
+  display: grid;
+  background-color: rgb(102, 143, 13);
+}
+.select button {
+  width: 45px;
+  height: 14px;
+  background-color: rgb(50, 50, 50);
+  border-radius: 45%;
+  justify-self: center;
+  align-self: center;
+}
+.start {
+  grid-row: 4/5;
+  grid-column: 4/6;
+  border-radius: 50px;
+  display: grid;
+  background-color: rgb(102, 143, 13);
+}
+.start button {
+  width: 45px;
+  height: 14px;
+  background-color: rgb(50, 50, 50);
+  border-radius: 45%;
+  justify-self: center;
+  align-self: center;
+}
+.selectstartexto {
+  grid-row: 4/5;
+  grid-column: 3/4;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.txtselect {
+  color: rgb(125, 179, 9);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+.txtstart {
+  color: rgb(125, 179, 9);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+.rejilla {
+  grid-row: 3/6;
+  grid-column: 4/5;
+  display: grid;
+  grid-template-rows: 2fr 1.2fr 0.5fr;
+  grid-template-columns: 0.5fr 1.5fr 0.5fr;
+}
+.rejimg {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  background-image: url(../img/rejilla.png);
+  background-size: 15%;
+  background-repeat: space;
+  transform: rotate(-6deg);
+}
